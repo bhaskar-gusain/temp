@@ -1,0 +1,404 @@
+{
+	"id": "imx8ulp",
+	"name": "i.MX8ULP",
+	"title": "Akhila IMX8ULP NoCode",
+	"description": "A minimal MakeCode target for i.MX8ULP board.",
+	"corepkg": "core",
+	"bundleddirs": [
+		"libs/core" ,
+		"libs/fonts" ,
+		"libs/color",
+		"libs/radio",
+		"libs/devices",
+		"libs/bluetooth",
+		"libs/servo",
+		"libs/radio-broadcast",
+		"libs/microphone",
+		"libs/settings",
+		"libs/flashlog",
+		"libs/datalogger",
+		"libs/bitmap",
+		"libs/arcadeshield",
+		"libs/audio-recording"
+
+	],
+	"cloud": {
+		"workspace": "false",
+		"packages": false,
+		"sharing": false,
+		"thumbnails": true,
+		"publishing": false,
+		"importing": false,
+		"showBadges": false,
+		"preferredPackages": [
+			"Microsoft/pxt-neopixel"
+		],
+		"githubPackages": true,
+		"cloudProviders": {
+			"github": {
+				"id": "github",
+				"name": "GitHub",
+				"icon": "/static/providers/github-mark.png",
+				"identity": false,
+				"order": 3
+			},
+			"microsoft": {
+				"id": "microsoft",
+				"name": "Microsoft",
+				"icon": "/static/providers/microsoft-logo.svg",
+				"identity": true,
+				"redirect": true,
+				"order": 1
+			},
+			"google": {
+				"id": "google",
+				"name": "Google",
+				"icon": "/static/providers/google-logo.svg",
+				"identity": true,
+				"redirect": true,
+				"order": 2
+			},
+			"clever": {
+				"id": "clever",
+				"name": "Clever",
+				"icon": "/static/providers/clever-logo.png",
+				"identity": true,
+				"redirect": true,
+				"order": 3
+			}
+		}
+	},
+	"compile": {
+		"isNative": true,                
+		"nativeType": "cpp",
+		"hasHex": false,                 
+		"deployDrives": "",             
+		"driveName": "IMX8ULP",              
+		"openocdScript": "",        
+		"flashUsableEnd": 0,       
+		"flashEnd": 0,
+		"flashCodeAlign": 0,
+		"floatingPoint": true,     
+		"taggedInts": true,
+		"utf8": true,            
+		"gc": true,
+		"imageRefTag": 9,
+		"shimRenames": {},      
+		"patches": {},         
+		"hidSelectors": [],   
+		"webUSB": false,
+		"useNewFunctions": true
+	},
+	"compileService": {
+		"buildEngine": "dockermake",
+		"serviceId": "imx8ulp",         
+		"dockerImage": ""
+	},
+	"multiVariants": [],
+	"alwaysMultiVariant": false,
+	"variants": {},
+
+	"runtime": {
+		"mathBlocks": true,
+		"loopsBlocks": true,
+		"logicBlocks": true,
+		"variablesBlocks": true,
+		"textBlocks": true,
+		"listsBlocks": true,
+		"functionBlocks": true,
+		"functionsOptions": {
+			"useNewFunctions": true
+		},
+		"onStartColor": "#1E90FF",
+		"onStartNamespace": "basic",
+		"onStartWeight": 54
+
+	},
+	"simulator": {
+		"autoRun": true,
+		"streams": false,
+		"aspectRatio": 1.22,
+		"parts": true,
+		"partsAspectRatio": 0.69,
+		"messageSimulators": {
+			"jacdac": {
+				"url": "https://microsoft.github.io/jacdac-docs/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+				"localHostUrl": "http://localhost:8000/tools/makecode-sim?webusb=0&parentOrigin=$PARENT_ORIGIN$",
+				"aspectRatio": 1.22,
+				"permanent": true
+			},
+			"robot": {
+				"url": "https://microsoft.github.io/microbit-robot/?parentOrigin=$PARENT_ORIGIN$",
+				"localHostUrl": "http://localhost:3000/microbit-robot/?parentOrigin=$PARENT_ORIGIN$",
+				"aspectRatio": 1.22,
+				"permanent": true
+			},
+			"arcadeshield": {
+				"url": "https://microsoft.github.io/pxt-arcadeshield/?parentOrigin=$PARENT_ORIGIN$",
+				"localHostUrl": "http://localhost:3000/?parentOrigin=$PARENT_ORIGIN$",
+				"aspectRatio": 1.22,
+				"permanent": true
+			}
+		},
+		"testSimulatorExtensions": {},
+		"boardDefinition": {
+			"visual": "none",
+			"gpioPinBlocks": [],
+			"gpioPinMap": {}
+		}
+	},
+	"serial": {
+		"nameFilter": "^(mbed Serial Port|DAPLink CMSIS-DAP)",
+		"log": true,
+		"useEditor": true,
+		"editorTheme": {
+			"graphBackground": "#d9d9d9",
+			"lineColors": [
+				"#6633cc",
+				"#2C7485",
+				"#3454D1",
+				"#EF767A",
+				"#F46197",
+				"#107C10"
+			]
+		},
+		"vendorId": "0x0d28",
+		"productId": "0x0204",
+		"rawHID": true
+	},
+	"appTheme": {
+		"accentColor": "#5C005C",       
+		"footerLogo": "./static/logo.portrait.black.svg",
+		"appLogo": "https://shorturl.at/Gzyhu",
+		"organization": "AkhilaLabs NoCode",
+		"organizationUrl": "https://akhilalabs.com/",
+		"organizationLogo": "https://shorturl.at/Gzyhu",
+		"organizationWideLogo": "https://shorturl.at/Gzyhu",
+		"homeScreenHero": {
+			"imageUrl": "/static/herogallery/hero-banner.png",
+			"name": "Flashing Heart",
+			"url": "/projects/flashing-heart",
+			"description": "New? Start here!",
+			"cardType": "tutorial"
+		},
+		"homeScreenHeroGallery": "/hero-banner",
+		"homeUrl": "http://localhost:3232/",
+		"embedUrl": "http://localhost:3232/",
+		"shareUrl": "http://localhost:3232/",
+		"privacyUrl": "http://localhost:3232/privacy",
+		"githubUrl": "http://localhost:3232/docs/github",
+		"boardName": "AkhilaFlex",
+		"boardNickname": "AkhilaFlex",
+		"driveDisplayName": "AKHILAFLEX",
+		"appStoreID": "1092687276",
+		"mobileSafariDownloadProtocol": "microbithex://?data",
+		"crowdinProject": "makecode",
+		"extendEditor": true,
+		"extendFieldEditors": true,
+		"enableTrace": true,
+		"ignoreDocsErrors": false,
+		"errorList": true,
+		"workspaceSearch": true,
+		"allowPackageExtensions": true,
+		"addNewTypeScriptFile": true,
+		"experiments": [
+			"accessibleBlocks",
+			"debugExtensionCode",
+			"bluetoothUartConsole",
+			"bluetoothPartialFlashing",
+			"identity",
+			"blocksErrorList"
+		],
+
+		"docMenu": [
+			{
+				"name": "Support",
+				"path": "https://support.microbit.org/"
+			},
+			{
+				"name": "Reference",
+				"path": "/reference"
+			},
+			{
+				"name": "Hardware",
+				"path": "/device"
+			},
+			{
+				"name": "Buy",
+				"path": "https://microbit.org/resellers"
+			}
+		],
+		"hasReferenceDocs": true,
+		"usbDocs": "/device/usb",
+		"hideHomeDetailsVideo": true,
+		"invertedMenu": true,
+		"coloredToolbox": true,
+		"monacoToolbox": true,
+		"hasAudio": true,
+		"socialOptions": {
+			"orgTwitterHandle": "MSMakeCode",
+			"hashtags": "MakeCode",
+			"discourse": "https://forum.makecode.com/",
+			"discourseCategory": "micro:bit"
+		},
+		"blocklyOptions": {
+			"grid": {
+				"spacing": 45,
+				"length": 7,
+				"colour": "rgba(189, 195, 199, 0.30)",
+				"snap": false
+			}
+		},
+		"blockColors": {
+			"logic": "#00A4A6",
+			"loops": "#00AA00",
+			"math": "#9400D3",
+			"variables": "#DC143C",
+			"text": "#B8860B",
+			"advanced": "#00272B",
+			"functions": "#3455DB",
+			"arrays": "#E65722"
+		},
+		"blocksCollapsing": true,
+		"highContrast": true,
+		"greenScreen": true,
+		"print": true,
+		"selectLanguage": true,
+		"availableLocales": [
+			"en",
+			"ar",
+			"bg",
+			"ca",
+			"cs",
+			"cy",
+			"da",
+			"de",
+			"el",
+			"es-ES",
+			"fi",
+			"fr",
+			"he",
+			"hu",
+			"is",
+			"it",
+			"ja",
+			"ko",
+			"nl",
+			"nb",
+			"nn-NO",
+			"pl",
+			"pt-BR",
+			"pt-PT",
+			"ru",
+			"si-LK",
+			"sk",
+			"sr",
+			"sv-SE",
+			"tr",
+			"uk",
+			"vi",
+			"zh-CN",
+			"zh-TW"
+		],
+		"monacoColors": {
+			"editor.background": "#ecf0f1"
+		},
+		"monacoFieldEditors": [
+			"soundeffect-editor",
+			"image-editor"
+		],
+		"browserDbPrefixes": {
+			"1": "v1",
+			"2": "v2",
+			"3": "v3",
+			"4": "v4",
+			"5": "v5",
+			"6": "v6",
+			"7": "v7"
+		},
+		"editorVersionPaths": {
+			"0": "v0"
+		},
+		"showProjectSettings": true,
+		"scriptManager": true,
+		"debugger": true,
+		"simGifTransparent": "rgba(0,0,0,0)",
+		"simGifMaxFrames": 44,
+		"simScreenshot": true,
+		"simScreenshotMaxUriLength": 300000,
+		"simGif": true,
+		"simGifWidth": 240,
+		"qrCode": true,
+		"importExtensionFiles": true,
+		"nameProjectFirst": true,
+		"githubEditor": true,
+		"chooseLanguageRestrictionOnNewProject": true,
+		"openProjectNewTab": true,
+		"python": true,
+		"appFlashingTroubleshoot": "/device/windows-app/troubleshoot",
+		"immersiveReader": true,
+		"tutorialCodeValidation": true,
+		"downloadDialogTheme": {
+			"webUSBDeviceNames": ["BBC micro:bit CMSIS-DAP", "DAPLink CMSIS-DAP"],
+			"minimumFirmwareVersion": "0249",
+			"deviceIcon": "xicon microbit",
+			"deviceSuccessIcon": "xicon microbit-check",
+
+			"downloadMenuHelpURL" : "/device/usb",
+			"downloadHelpURL" : "/device/usb",
+			"troubleshootWebUSBHelpURL": "/device/usb/webusb/troubleshoot",
+			"incompatibleHardwareHelpURL": "/device/v2",
+
+			"dragFileImage": "/static/download/transfer.png",
+			"connectDeviceImage": "/static/download/connect-microbit.gif",
+			"disconnectDeviceImage": "/static/download/full-reset.gif",
+			"selectDeviceImage": "/static/download/selecting-microbit.gif",
+			"connectionSuccessImage": "/static/download/successfully-paired.png",
+			"incompatibleHardwareImage": "/static/download/incompatible.png",
+			"usbDeviceForgottenImage": "/static/download/device-forgotten.gif",
+			"browserUnpairImage": "/static/download/browser-unpair-image.gif"
+		},
+		"winAppDeprImage": "/static/winapp.PNG",
+		"showWinAppDeprBanner": false,
+		"tours": {
+			"editor": "/tours/editor-tour"
+		},
+		"tutorialSimSidebarLayout": true,
+		"preferWebUSBDownload": true,
+		"hideReplaceMyCode": true,
+		"matchWebUSBDeviceInSim": true,
+		"condenseProfile": true,
+		"cloudProfileIcon": "/static/profile/microbit-cloud.png",
+		"timeMachine": true,
+		"timeMachineDiffInterval": 600000,
+		"timeMachineSnapshotInterval": 1800000
+	},
+	"queryVariants": {
+		"hidemenu": {
+			"appTheme": {
+				"hideMenuBar": true
+			}
+		},
+		"androidapp": {
+			"compile": {
+				"webUSB": false
+			},
+			"appTheme": {
+				"disableBlobObjectDownload": true
+			}
+		},
+		"skillsMap=1": {
+			"appTheme": {
+				"hideReplaceMyCode": false
+			}
+		},
+		"teachertool=1": {
+			"appTheme": {
+				"hideMenuBar": true,
+				"workspaceSearch": true,
+				"noReloadOnUpdate": true
+			}
+		}
+	},
+	"uploadDocs": true
+}	

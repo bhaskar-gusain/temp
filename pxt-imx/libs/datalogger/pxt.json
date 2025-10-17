@@ -1,0 +1,21 @@
+{
+    "name": "datalogger",
+    "description": "Data logging to flash memory. micro:bit (V2) only.",
+    "files": [
+        "datalogger.ts"
+    ],
+    "public": true,
+    "disablesVariants": [
+        "mbdal"
+    ],
+    "dependencies": {
+        "core": "file:../core",
+        "flashlog": "file:../flashlog"
+    },
+    "yotta": {
+        "config": {
+            "MICROBIT_BLE_UTILITY_SERVICE": 1,
+            "MICROBIT_BLE_UTILITY_SERVICE_PAIRING": 1
+        }
+    }
+}
